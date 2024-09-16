@@ -1,0 +1,1 @@
+* It's always a good idea to isolate projects in their own virtual environments.
