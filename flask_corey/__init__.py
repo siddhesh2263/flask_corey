@@ -31,9 +31,11 @@ def create_app(config_class=Config):
     from flask_corey.users.routes import users
     from flask_corey.posts.routes import posts
     from flask_corey.main.routes import main
+    from flask_corey.errors.handlers import errors
 
     app.register_blueprint(users)
     app.register_blueprint(posts)
     app.register_blueprint(main)
+    app.register_blueprint(errors)
 
     return app
